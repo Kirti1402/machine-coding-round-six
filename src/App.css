@@ -1,31 +1,9 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
+}
+
+body{
+  position: relative;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +13,155 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.heading {
+  text-align: center;
+}
+.cuisine-btn {
+  margin: 1rem;
+  padding: 0.3rem;
+  background-color: #ef4f5f;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.cuisine-display {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+.cuisine-card {
+  display: flex;
+}
+.card-container {
+  margin: 5px;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px lightgrey;
+}
+
+.card-detail {
+  padding: 10px;
+}
+.card-detail p {
+  font-size: 15px;
+  color: grey;
+}
+.card-img {
+  width: 100%;
+  height: 150px;
+}
+.resturant-name {
+  cursor: pointer;
+}
+.resturant-name:hover {
+  color: cornflowerblue;
+}
+
+.resturant-detail {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+}
+.add-review-btn {
+  margin: auto;
+  height: 30px;
+  background-color: #ef4f5f;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+.rating-container {
+  margin: auto;
+  max-width: 600px;
+}
+
+.rating-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.img-name-rating {
+  display: flex;
+  justify-content: space-between;
+}
+.img-name {
+  display: flex;
+  align-items: center;
+}
+.rating-display {
+  background-color: greenyellow;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.select-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resturant-container{
+  position: relative;
+}
+
+.review-container {
+  position: absolute;
+  background-color: coral;
+  padding: 10px;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+select,
+input {
+  width: 150px;
+  height: 30px;
+}
+
+.submit-btn {
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.close {
+  background-color: transparent;
+  border:none;
+  position: absolute;
+  top: 0;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
 }
